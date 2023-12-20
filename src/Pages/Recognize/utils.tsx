@@ -24,7 +24,7 @@ export async function sendAudioToService(audioBlob: Blob) {
         const audioData = parts[1];
 
         return {
-            originalAudio: b64toBlob(audioData, 'audio/wav'),
+            originalAudio: audioBlob,
             cleanedAudio: b64toBlob(audioData, 'audio/wav'),
             transcription: jsonData,
         };
