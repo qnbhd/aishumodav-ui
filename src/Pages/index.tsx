@@ -45,7 +45,7 @@ function Home() {
                 title="Clear and Accurate Audio Transcription"
                 description="Remove noise from your audio and get accurate transcriptions with AIShumodav"
             >
-                <button class="btn btn-primary">Get Started</button>
+                <a class="btn btn-primary" href="/recognize">Get Started</a>
             </Hero>
             <Hero
                 title="Remove background noise"

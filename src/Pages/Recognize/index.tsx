@@ -79,11 +79,11 @@ export default function Recognize() {
 
                     transcriptionDownload!.onclick = () => {
                         const a = document.createElement('a');
-                        const blobObj = new Blob([JSON.stringify(data['transcription'], null, 4)], {
-                            type: 'application/json',
+                        const blobObj = new Blob([data['transcription']["additional_info"]], {
+                            type: 'text/plain',
                         });
                         a.href = URL.createObjectURL(blobObj);
-                        a.download = 'transcription.json';
+                        a.download = 'transcription.txt';
                         a.click();
                     };
 
